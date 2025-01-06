@@ -1,0 +1,20 @@
+
+#
+$ python -m venv my_env
+$ source my_env/bin/activate
+
+# check whether Django has been successfully installed
+$ python -m django --version
+
+$ django-admin startproject mysite
+
+$ python manage.py migrate
+
+$ python manage.py runserver
+$ python manage.py runserver 127.0.0.1:8001 --settings=mysite.settings
+
+
+
+
+
+

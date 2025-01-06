@@ -1,0 +1,36 @@
+
+# The responsibilities in the Django MTV pattern are divided as follows:
+. Model: This defines the logical data structure and is the data handler between the database and the view.
+. Template: This is the presentation layer. Django uses a plain-text template system that keeps
+  everything that the browser renders.
+. View: This communicates with the database via the model and transfers the data to the template for viewing.
+
+
+- manage.py: This is a command-line utility used to interact with your project. You won’t usually
+  need to edit this file.
+- mysite/: This is the Python package for your project, which consists of the following files:
+    . __init__.py: An empty file that tells Python to treat the mysite directory as a Python module.
+    . asgi.py: This is the configuration to run your project as an ASGI application with ASGI-compatible
+      web servers. ASGI is the emerging Python standard for asynchronous web servers and applications.
+    . settings.py: This indicates settings and configuration for your project and contains initial 
+       default settings.
+    . urls.py: This is the place where your URL patterns live. Each URL defined here is mapped to a view.
+    . wsgi.py: This is the configuration to run your project as a Web Server Gateway 
+      Interface (WSGI) application with WSGI-compatible web servers.
+
+- mysite/blog dir content 
+  . __init__.py: an empty file that tells Python to treat the blog directory as a Python module.
+  . admin.py: This is where you register models to include them in the Django administration
+    site—using this site is optional.
+  . apps.py: This includes the main configuration of the blog application.
+  . migrations: This directory will contain database migrations of the application. 
+  . models.py: This includes the data models of your application; all Django applications need to
+    have a models.py file but it can be left empty.
+  . tests.py: This is where you can add tests for your application.
+  . views.py: The logic of your application goes here; each view receives an HTTP request, 
+    processes it, and returns a response.
+
+
+
+
+
