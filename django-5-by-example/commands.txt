@@ -13,7 +13,15 @@ $ python manage.py migrate
 $ python manage.py runserver
 $ python manage.py runserver 127.0.0.1:8001 --settings=mysite.settings
 
+$ python manage.py shell
 
+# Take a look at the SQL code that Django will execute in the database to create the table for your
+# model. The sqlmigrate command takes the migration names and returns their SQL without executing it.
+$ python manage.py sqlmigrate blog 0001
+
+# Creating an administration site for models
+$ python manage.py createsuperuser
+# open http://127.0.0.1:8000/admin/
 
 
 

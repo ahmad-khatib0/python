@@ -30,6 +30,11 @@
   . views.py: The logic of your application goes here; each view receives an HTTP request, 
     processes it, and returns a response.
 
+- The Django ORM is based on QuerySets. A QuerySet is a collection of database queries to retrieve 
+  objects from your database. You can apply filters to QuerySets to narrow down the query results based
+  on given parameters. The QuerySet equates to a SELECT SQL statement and the filters are limiting SQL
+  clauses such as WHERE or LIMIT.
+
 
 
 
