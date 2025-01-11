@@ -35,7 +35,17 @@
   on given parameters. The QuerySet equates to a SELECT SQL statement and the filters are limiting SQL
   clauses such as WHERE or LIMIT.
 
+- Django comes with two base classes to build forms:
+• Form: This allows you to build standard forms by defining fields and validations.
+• ModelForm: This allows you to build forms tied to model instances. It provides all the functionalities
+  of the base Form class, but form fields can be explicitly declared, or automatically generated, 
+  from model fields. The form can be used to create or edit model instances.
 
-
+- The as_field_group method renders each field including help text and errors. This method uses the 
+  django/forms/field.html template by default. You can see the contents of this template at 
+  https://github.com/django/django/blob/stable/5.0.x/django/forms/templates/django/forms/field.html. 
+  You can also create custom field templates and reuse them by adding the template_name attribute to 
+  any form field. You can read more about reusable form templates at 
+  https://docs.djangoproject.com/en/5.0/topics/forms/#reusable-field-group-templates.
 
 

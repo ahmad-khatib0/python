@@ -8,6 +8,9 @@ $ python -m django --version
 
 $ django-admin startproject mysite
 
+# make the migration files from the models
+$ python manage.py makemigrations blog
+# apply the made migration files 
 $ python manage.py migrate
 
 $ python manage.py runserver

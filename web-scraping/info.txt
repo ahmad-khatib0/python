@@ -1,0 +1,17 @@
+
+
+- There are three basic types of intellectual property: trademarks (indicated by a ™ or ® symbol), 
+  copyrights (the ubiquitous ©), and patents (sometimes indicated by text noting that the invention is
+  patent protected or a patent number but often by nothing at all).
+
+- When Google web scrapers (also known as Googlebots) crawl websites, they make a copy of the site and
+  host it on the internet. Anyone can access this cache, using the URL format:
+  http://webcache.googleusercontent.com/search?q=cache:http://pythonscraping.com
+
+- SERP Scraping
+  SERP, or search engine results page scraping, is the practice of scraping useful data 
+  directly from search engine results without going to the linked pages themselves.
+
+
+
+
