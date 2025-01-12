@@ -48,4 +48,8 @@
   any form field. You can read more about reusable form templates at 
   https://docs.djangoproject.com/en/5.0/topics/forms/#reusable-field-group-templates.
 
+- Django provides the following helper functions, which allow you to easily create template tags:
+  • simple_tag: Processes the given data and returns a string
+  • inclusion_tag: Processes the given data and returns a rendered template
+
 

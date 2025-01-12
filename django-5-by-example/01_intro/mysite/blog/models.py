@@ -3,6 +3,7 @@ from django.utils import timezone
 from django.db.models.functions import Now
 from django.conf import settings
 from django.urls import reverse
+from taggit.managers import TaggableManager
 
 
 # There are two ways to add or customize managers for your models: you can add extra manager methods
@@ -21,6 +22,7 @@ class Post(models.Model):
         DRAFT = "DF", "Draft"
         PUBLISHED = "PB", "Published"
 
+    tags = TaggableManager()
     objects = models.Manager()  # The default manager.
     published = PublishedManager()  # Our custom manager.
 
